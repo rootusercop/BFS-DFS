@@ -27,7 +27,7 @@ Class Main {
 		printNode(rootNode);
 		while(!stack.isEmpty()) {
 			Node node = (Node)s.peek();
-			Node child = getUnvisitedChildNode(n);
+			Node child = getUnvisitedChildNode(node);
 			if(child != null) {
 				child.visited = true;
 				printNode(child);
